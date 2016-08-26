@@ -1,0 +1,18 @@
+<h1>Thank you for Registering</h1>
+<p>Username: <%= @user.username %></p>
+  <p>Password: <%= @user.password %></p>
+    <p>Full Name: <%= @user.name %></p>
+      <p>Street Address: <%= @user.street %></p>
+        <p>City: <%= @user.city %></p>
+          <p>State: <%= @user.state %></p>
+            <p>Zip Code: <%= @user.zip %></p>
+              <p>Country: <%= @user.country %></p>
+                <p>Email Address: <%= @user.email %></p>
+
+<br>
+<br>
+<form method="get" action="/confirmation/valid_credentials">
+<input type="text" name="username" placeholder="Username">
+<input type="text" name="password" placeholder="Password">
+<input type="submit" value="Log In">
+</form>
